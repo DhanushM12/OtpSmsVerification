@@ -1,0 +1,22 @@
+{
+  "name": "otpsms",
+  "version": "1.0.0",
+  "description": "sms verification otp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Dhanush Mukhi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "nexmo": "^2.9.1",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7"
+  }
+}
