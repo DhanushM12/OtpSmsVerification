@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "assets")));
 
-app.get("/", (req, res) => res.send("<h1>Hello World!</h1>"));
+app.get("/", (req, res) => res.send("<h1>AdmitKard OTP Verification</h1>"));
 
 app.listen(port, function (err) {
   if (err) {
