@@ -4,8 +4,8 @@ const router = express.Router();
 const Nexmo = require("nexmo");
 
 const nexmo = new Nexmo({
-  apiKey: process.env.API_KEY,
-  apiSecret: process.env.API_SECRET,
+  apiKey: "1d704741",
+  apiSecret: "PAE6OzDp1VIfKXMN",
 });
 
 router.get("/verify", (req, res) => {
@@ -26,7 +26,9 @@ router.post("/confirm", (req, res) => {
       // Error status code: https://docs.nexmo.com/verify/api-reference/api-reference#check
       if (result && result.status == "0") {
         //res.status(200).send('Account verified!');
-        res.render("status", { message: "Account verified! 🎉" });
+        res.render("status", {
+          message: "Welcome to AdmitKard your Account verified! 🎉",
+        });
       } else {
         //res.status(401).send(result.error_text);
         res.render("status", {
